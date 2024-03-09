@@ -1,1 +1,3 @@
 # catnip.nu
+
+hello!
