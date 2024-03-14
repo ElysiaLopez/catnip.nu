@@ -1,3 +1,3 @@
 # catnip.nu
 
-hello!
+goodbye
