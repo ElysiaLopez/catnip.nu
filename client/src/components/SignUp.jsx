@@ -1,3 +1,4 @@
+import "./App.css";
 const SignUp = () => {
     return (
         <div className="App">
