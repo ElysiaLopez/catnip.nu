@@ -10,6 +10,7 @@ import RecordList from "./components/RecordList";
 import AboutUs from "./components/AboutUs";
 import Home from "./components/Home";
 import "./index.css";
+import SignUp from "./components/SignUp";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,21 @@ const router = createBrowserRouter([
       }
     ],
   },
+  {
+    path: "/signup",
+    element: <App />,
+    children: [
+      {
+        path: "/signup",
+        element: <SignUp />,
+      },
+    ],
+  },
+
+
+
+
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
