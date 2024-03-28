@@ -1,4 +1,4 @@
-import '../resources/App.css'; 
+import '../App.css'; 
 const SignUp = () => {
     return (
         <div className="App">
