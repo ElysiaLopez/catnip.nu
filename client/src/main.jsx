@@ -8,10 +8,10 @@ import App from "./App";
 import Record from "./components/Record";
 import RecordList from "./components/RecordList";
 import AboutUs from "./components/AboutUs";
-import Home from "./components/Home";
 import "./index.css";
 import SignUp from "./components/SignUp";
 import LoginSignup from "./components/LoginSignup";
+import LandingPage from "./components/LandingPage";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <LandingPage />,
       },
     ],
   },
