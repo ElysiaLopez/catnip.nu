@@ -1,15 +1,15 @@
 const AboutUs = () => {
     return (
       <div class="about-us-section">
-      <h2>Welcome to Catnip.nu, Your Interactive Guide to Student Orgs & Evanston Events!</h2>
+      <h1 style={{color: "darkred"}}><strong>Welcome to Catnip.nu, Your Interactive Guide to Student Orgs & Evanston Events!</strong></h1>
       <p>At Catnip.nu, we're passionate about bringing Wildcats together through a vibrant, interactive map that makes discovering and participating in events and organizations around campus effortless and fun. Designed with both the Northwestern University community and Evanston residents in mind, our platform bridges the gap between student organizations, local businesses, and event-goers through a user-friendly app interface.</p>
   
   
-      <h3>Our Mission</h3>
+      <h3 style={{color: "vanilla"}}><strong>Our Mission</strong></h3>
       <p>Our mission is simple: to create a connected, engaged community where information about events and organizations is easily accessible. Whether you're looking for a cultural event, a religious meeting, a tech workshop with free food, or a local fundraiser, Catnip.nu is your go-to source for what's happening at Northwestern.</p>
   
   
-      <h3>Features at a Glance</h3>
+      <h3><strong>Features at a Glance</strong></h3>
       <ul>
           <li><strong>Interactive Map:</strong> Navigate through Northwestern with our interactive map, featuring pop-up icons that represent different events and orgs in real-time.</li>
           <li><strong>Customizable Filters:</strong> Looking for something specific? Filter events and organizations by category, location, and even the type of event (be it an open meeting, fundraiser, or something else).</li>
@@ -21,9 +21,9 @@ const AboutUs = () => {
       </ul>
   
   
-      <h3>Bringing Wildcats Together with Catnip.nu</h3>
+      <h3><strong>Bringing Wildcats Together with Catnip.nu</strong></h3>
   <p>Catnip.nu isn't just a platform; it's a rallying point for Wildcats from all walks of life. We're here to strengthen the bonds within the Northwestern University community, providing a central hub where Wildcats can discover events, join student organizations, and celebrate our diverse interests and backgrounds. Our goal is to create a vibrant, interconnected campus environment where every Wildcat feels at home, engaged, and part of something bigger. Let's make every moment on campus count, together.</p>
-      <h3>Join Us</h3>
+      <h3><strong>Join Us</strong></h3>
       <p>Dive into Catnip.nu and start exploring the best of student orgs and Evanston events today. Be part of a community that celebrates diversity, connection, and the joy of discovering something new.</p>
   </div>
   

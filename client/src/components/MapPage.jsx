@@ -1,10 +1,10 @@
-import Header from "./components/Header";
-import MapCard from "./components/MapCard";
-import Filter from "./components/Filter";
-import CreateEvent from "./components/CreateEvent";
-import "./assets/home.css";
+import Header from "./Header";
+import MapCard from "./MapCard";
+import Filter from "./Filter";
+import CreateEvent from "./CreateEvent";
+import "../assets/home.css";
 
-export default function Home()
+export default function MapPage()
 {
     return (
         <>

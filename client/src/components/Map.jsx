@@ -1,5 +1,4 @@
 import React from 'react'
-import GoogleMapReact from 'google-map-react'
 // import 'assets/css/map.css'
 
 // import { Icon } from '@iconify/react'
