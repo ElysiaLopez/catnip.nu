@@ -1,11 +1,11 @@
 const AboutUs = () => {
     return (
       <div class="about-us-section">
-      <h1 style={{color: "pink"}}><strong>Welcome to Catnip.nu, Your Interactive Guide to Student Orgs & Evanston Events!</strong></h1>
+      <h1 style={{color: "darkred"}}><strong>Welcome to Catnip.nu, Your Interactive Guide to Student Orgs & Evanston Events!</strong></h1>
       <p>At Catnip.nu, we're passionate about bringing Wildcats together through a vibrant, interactive map that makes discovering and participating in events and organizations around campus effortless and fun. Designed with both the Northwestern University community and Evanston residents in mind, our platform bridges the gap between student organizations, local businesses, and event-goers through a user-friendly app interface.</p>
   
   
-      <h3 style={{color: vanilla}}><strong>Our Mission</strong></h3>
+      <h3 style={{color: "vanilla"}}><strong>Our Mission</strong></h3>
       <p>Our mission is simple: to create a connected, engaged community where information about events and organizations is easily accessible. Whether you're looking for a cultural event, a religious meeting, a tech workshop with free food, or a local fundraiser, Catnip.nu is your go-to source for what's happening at Northwestern.</p>
   
   
