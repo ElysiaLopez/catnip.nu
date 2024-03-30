@@ -12,6 +12,7 @@ import "./index.css";
 import SignUp from "./components/SignUp";
 import LoginSignup from "./components/LoginSignup";
 import LandingPage from "./components/LandingPage";
+import MapPage from "./components/MapPage";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,16 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <LoginSignup/>
+      }
+    ]
+  },
+  {
+    path: "/map",
+    element: <App/>,
+    children: [
+      {
+        path: "/map",
+        element: <MapPage/>
       }
     ]
   }
