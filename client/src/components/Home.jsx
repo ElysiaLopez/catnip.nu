@@ -8,7 +8,7 @@ export default function Home()
 {
     return (
         <>
-      <Header />
+      {/* <Header /> */}
       <div className="body">
         <div className="sidebar">
           <CreateEvent />
