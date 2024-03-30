@@ -40,3 +40,27 @@
 .read-the-docs {
   color: #888;
 }
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.custom-button {
+  background-color: rgb(146, 83, 239);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.custom-button:hover {
+  background-color: #000000;
+}

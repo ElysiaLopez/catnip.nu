@@ -10,6 +10,8 @@ import RecordList from "./components/RecordList";
 import AboutUs from "./components/AboutUs";
 import Home from "./components/Home";
 import "./index.css";
+import SignUp from "./components/SignUp";
+import LoginSignup from "./components/LoginSignup";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +34,27 @@ const router = createBrowserRouter([
       }
     ],
   },
+  {
+    path: "/signup",
+    element: <App />,
+    children: [
+      {
+        path: "/signup",
+        element: <SignUp />,
+      },
+    ],
+  },
+  {
+    path: "/login",
+    element: <App/>,
+    children: [
+      {
+        path: "/login",
+        element: <LoginSignup/>
+      }
+    ]
+  }
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
