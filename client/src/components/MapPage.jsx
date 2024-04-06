@@ -1,4 +1,3 @@
-import Header from "./Header";
 import MapCard from "./MapCard";
 import Filter from "./Filter";
 import CreateEvent from "./CreateEvent";
