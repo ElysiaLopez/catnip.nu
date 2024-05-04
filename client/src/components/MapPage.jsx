@@ -15,7 +15,7 @@ export default function MapPage()
           <Filter />
         </div>
         <div className="space"></div>
-        <div className="map bg-white h-full w-full overflow-hidden rounded border-white border-4 shadow-lg">
+        <div className="map bg-white h-screen w-screen overflow-hidden rounded border-white border-4 shadow-lg">
           <Map />
         </div>
       </div>
