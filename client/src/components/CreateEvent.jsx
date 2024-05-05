@@ -8,7 +8,7 @@ function CreateEvent(args) {
 
   return (
     <div>
-      <Button className="bg-white bg-opacity-50 rounded-md py-2 px-4" color="primary" onClick={toggle}>
+      <Button className="bg-white rounded-lg py-3 px-6 font-bold text-xl shadow-sm hover:bg-purple-300 hover:text-white hover:shadow-lg" color="primary" onClick={toggle}>
         Create Event
       </Button>
       <Modal className="z-10 fixed top-32 left-128 bg-gray-200 rounded-xl shadow-md p-6" isOpen={modal} toggle={toggle} {...args}>
