@@ -1,32 +1,23 @@
-import React from 'react'
-// import 'assets/css/map.css'
+import React, { useRef } from "react";
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import "leaflet/dist/leaflet.css";
 
-// import { Icon } from '@iconify/react'
-// import locationIcon from '@iconify/icons-mdi/map-marker'
-
-// const LocationPin = ({ text }) => (
-//     <div className="pin">
-//       <Icon icon={locationIcon} className="pin-icon" />
-//       <p className="pin-text">{text}</p>
-//     </div>
-//   )
-
-const Map = ({ location, zoomLevel }) => (
-    <div className="map">
-      {/* <div className="google-map">
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyCe8nyO1SSsbqYdXHdocVIkw2Ud03uFzvM' }}
-          defaultCenter={location}
-          defaultZoom={zoomLevel}
-        >
-          {/* <LocationPin
-            lat={location.lat}
-            lng={location.lng}
-            text={location.address}
-          /> */}
-        {/* </GoogleMapReact>
-      </div> */} 
-    </div>
-  )
-
-export default Map;
+const Map = () => {
+    const mapRef = useRef(null);
+    const latitude = 42.054853;
+    const longitude = -87.673945;
+  
+    return ( 
+      // Make sure you set the height and width of the map container otherwise the map won't show
+        <MapContainer center={[latitude, longitude]} zoom={15} ref={mapRef} className="h-full w-full">
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          {/* Additional map layers or components can be added here */}
+        </MapContainer>
+    );
+  };
+  
+  export default Map;
+  

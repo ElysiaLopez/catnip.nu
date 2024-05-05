@@ -15,6 +15,7 @@ function Filter() {
         <Card
         body
         outline
+        className="bg-white bg-opacity-50 rounded-xl shadow-md p-6"
         >
         <CardBody>
             <CardTitle tag="h5">

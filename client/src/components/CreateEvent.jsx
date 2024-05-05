@@ -8,10 +8,10 @@ function CreateEvent(args) {
 
   return (
     <div>
-      <Button color="primary" onClick={toggle}>
+      <Button className="bg-white bg-opacity-50 rounded-md py-2 px-4" color="primary" onClick={toggle}>
         Create Event
       </Button>
-      <Modal isOpen={modal} toggle={toggle} {...args}>
+      <Modal className="z-10 fixed top-32 left-128 bg-gray-200 rounded-xl shadow-md p-6" isOpen={modal} toggle={toggle} {...args}>
         <ModalHeader toggle={toggle}>Create Event</ModalHeader>
         <ModalBody>
         <InputGroup>

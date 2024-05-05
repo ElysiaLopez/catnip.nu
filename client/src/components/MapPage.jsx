@@ -1,5 +1,4 @@
-import Header from "./Header";
-import MapCard from "./MapCard";
+import Map from "./Map";
 import Filter from "./Filter";
 import CreateEvent from "./CreateEvent";
 import "../assets/home.css";
@@ -8,7 +7,7 @@ export default function MapPage()
 {
     return (
         <>
-      <Header />
+      {/* <Header /> */}
       <div className="body">
         <div className="sidebar">
           <CreateEvent />
@@ -16,8 +15,8 @@ export default function MapPage()
           <Filter />
         </div>
         <div className="space"></div>
-        <div className="map">
-          <MapCard />
+        <div className="map bg-white h-screen w-screen overflow-hidden rounded border-white border-4 shadow-lg">
+          <Map />
         </div>
       </div>
     </>
