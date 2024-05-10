@@ -36,7 +36,7 @@ app.post('/login', async (req, res)=>{
                 userId: uid,
                 userEmail: email,
                 userPassword: password
-            }
+            } 
             await users.insertOne(data)
             res.status(201).json({userId: uid})
         }
