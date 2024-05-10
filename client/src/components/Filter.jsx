@@ -15,58 +15,39 @@ function Filter() {
         <Card
         body
         outline
-        className="bg-white rounded-xl shadow-md p-6"
+        className="bg-white bg-opacity-50 rounded-xl shadow-md p-6"
         >
         <CardBody>
             <CardTitle tag="h5">
-            <h1 className="text-xl font-bold mb-6">Filter</h1>
+            Filter
             </CardTitle>
             <CardSubtitle
             className="mb-2 text-muted"
             tag="h6"
             >
-            <h2 className="font-bold text-left">Filter events by...</h2>
+            Filter events by...
             </CardSubtitle>
             <div>
-            <InputGroup >
-                <Input className="border-gray-100 border-2 rounded-md p-2" placeholder="Search Organization" />
+            <InputGroup>
+                <Input placeholder="Organization" />
             </InputGroup>
             <br />
             <InputGroup>
-                <InputGroupText><h2 className="font-bold text-left">Location</h2></InputGroupText>
-                <Input className="border-gray-100 border-2 rounded-md p-2" placeholder="Choose a Location" />
+                <InputGroupText>Category</InputGroupText>
+                <Input placeholder="Dropdown menu" />
             </InputGroup>
             <br />
-            <h2 className="font-bold text-left">Tags</h2>
-            <InputGroup className="flex justify-start flex-wrap">
-                <div className="mr-4">
+            <InputGroup>
                 <Input
                     addon
                     aria-label="Checkbox for following text input"
                     type="checkbox"
                 />
-                <p className="inline"> Free Food </p>
-                </div>
-                <div className="mr-4">
-                <Input
-                    addon
-                    aria-label="Checkbox for following text input"
-                    type="checkbox"
-                />
-                <p className="inline"> Free Food </p>
-                </div>
-                <div className="mr-4">
-                <Input
-                    addon
-                    aria-label="Checkbox for following text input"
-                    type="checkbox"
-                />
-                <p className="inline"> Free Food </p>
-                </div>
+                 Free Food
             </InputGroup>
             <br />
             </div>
-            <Button className="bg-purple-300 p-2 px-4 rounded-lg font-bold text-white">Search</Button>
+            <Button>Search</Button>
         </CardBody>
         </Card>
         </>
