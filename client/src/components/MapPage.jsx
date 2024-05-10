@@ -7,7 +7,6 @@ export default function MapPage()
 {
     return (
         <>
-      {/* <Header /> */}
       <div className="body">
         <div className="sidebar">
           <CreateEvent />
