@@ -19,29 +19,52 @@ app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 });
 
-app.post('/login', async (req, res)=>{
+app.post('/signup', async (req, res)=>{
     const client = new MongoClient(uri)
-    const {email, password} = req.body
+    const {name, email, password} = req.body
     try{
         await client.connect()
-        console.log("3")
         const database = client.db("catnipnu-data")
         const users = database.collection('users')
 
-        const existingUser = await users.findOne({email})
+        const existingUser = await users.findOne({userEmail: email})
         if (!existingUser){
             const uid = uuidv4()
+            const hashedPassword = bcrypt.hash(password,10)
 
             const data = {
                 userId: uid,
+                name: name,
                 userEmail: email,
-                userPassword: password
+                userPassword: hashedPassword
             } 
             await users.insertOne(data)
             res.status(201).json({userId: uid})
         }
 
-        const correctPassword = await bcrypt.compare(password, existingUser.password)
+        res.status(401).json({error: "user already exists"})
+    }catch(e){
+        console.log(e)
+    }finally{
+        await client.close()
+    }
+    
+})
+
+app.post('/login', async (req, res)=>{
+    const client = new MongoClient(uri)
+    const {email, password} = req.body
+    try{
+        await client.connect()
+        const database = client.db("catnipnu-data")
+        const users = database.collection('users')
+
+        const existingUser = await users.findOne({userEmail: email})
+        if (!existingUser){
+            res.status(401).json({error: "user doesn't exist"})
+        }
+
+        const correctPassword = bcrypt.compare(password, existingUser.userPassword)
         if (correctPassword){
             res.status(201).json({userId: existingUser.userId})
         }else{

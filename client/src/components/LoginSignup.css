@@ -97,3 +97,42 @@
     background: #EAEAEA;
     color: #67676767;
 }
+
+.popup-content {
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .popup-content h3 {
+    color: #B6ACD1;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .popup-content p {
+    color: #797979;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #B6ACD1;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: #8c7dbd;
+  }
