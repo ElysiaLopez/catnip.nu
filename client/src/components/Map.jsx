@@ -2,6 +2,19 @@ import React, { useRef } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import "leaflet/dist/leaflet.css";
 
+const Pin = (props) => {
+  return (
+      <Marker position={props.map.position}>
+          <Popup className="max-width-64">
+            <h1 className="font-bold text-xl py-2">{props.map.event}</h1>
+            <h2>{props.map.organization}</h2>
+            <h3>{props.map.tags}</h3>
+            <p>{props.map.description}</p>
+          </Popup>
+        </Marker>
+  );
+}
+
 const Map = () => {
     const mapRef = useRef(null);
     const latitude = 42.054853;
