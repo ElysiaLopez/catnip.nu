@@ -15,6 +15,7 @@
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
+    "reactjs-popup": "^2.0.6",
     "reactstrap": "^9.2.2",
     "tailwind": "^4.0.0"
   },

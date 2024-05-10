@@ -33,8 +33,8 @@ function Filter() {
             </InputGroup>
             <br />
             <InputGroup>
-                <InputGroupText><h2 className="font-bold text-left">Category</h2></InputGroupText>
-                <Input className="border-gray-100 border-2 rounded-md p-2" placeholder="Choose a Category" />
+                <InputGroupText><h2 className="font-bold text-left">Location</h2></InputGroupText>
+                <Input className="border-gray-100 border-2 rounded-md p-2" placeholder="Choose a Location" />
             </InputGroup>
             <br />
             <h2 className="font-bold text-left">Tags</h2>
