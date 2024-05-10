@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import {useEffect, useState} from "react";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import "leaflet/dist/leaflet.css";
 
@@ -20,6 +21,39 @@ const Map = () => {
     const latitude = 42.054853;
     const longitude = -87.673945;
     const Norris = [42.05366, -87.67258];
+
+    const [pins, setPins] = useState([]);
+
+    //fetches records from the database
+    useEffect(() => {
+      async function getRecords() {
+          const response = await fetch(`http://localhost:5050/record/`);
+          if(!response.ok)
+          {
+              const message = `An error has occurred: ${response.statusText}`;
+              console.error(message);
+              return;
+          }
+
+          const records = await response.json();
+          setPins(records);
+      }
+
+      getRecords();
+      return;
+  }, [pins.length]);
+
+  
+  function mapPins() {
+    return pins.map((pin) => {
+        return (
+            <Pin
+                pin={pin}
+                key={pin._id} 
+            />
+        );
+    });
+}
   
     return ( 
       // Make sure you set the height and width of the map container otherwise the map won't show
@@ -37,6 +71,7 @@ const Map = () => {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </Popup>
           </Marker>
+          {mapPins()}
         </MapContainer>
     );
   };
