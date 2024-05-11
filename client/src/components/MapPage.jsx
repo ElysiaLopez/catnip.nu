@@ -6,6 +6,7 @@ import Map from './Map';
 import Filter from './Filter';
 import CreateEvent from './CreateEvent';
 import LandingPage from './LandingPage';
+import Navbar from './Navbar';
 import '../assets/home.css';
 
 export default function MapPage() {
@@ -22,7 +23,7 @@ export default function MapPage() {
 
   return (
     <>
-
+      <Navbar />
       <div className="body">
         <div className="sidebar">
           <CreateEvent />

@@ -7,7 +7,7 @@ import "./App.css";
 const App = () => {
   return (
     <div className="w-full p-6">
-       <Navbar />
+       {/* <Navbar /> */}
       <Outlet />
     </div>
   );

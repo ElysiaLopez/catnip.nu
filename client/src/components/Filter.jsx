@@ -82,7 +82,7 @@ function Filter() {
             </InputGroup>
             <br />
             </div>
-            <Button className="bg-secondary transition ease-in-out duration-200 hover:bg-white hover:text-primary hover:shadow-lg p-2 px-4 rounded-lg font-bold text-white">Search</Button>
+            <Button disabled className="bg-secondary opacity-50 p-2 px-4 rounded-lg font-bold text-white">Feature in Dev!</Button>
         </CardBody>
         </Card>
         </>

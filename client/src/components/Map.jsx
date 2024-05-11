@@ -21,6 +21,9 @@ const Map = () => {
     const latitude = 42.054853;
     const longitude = -87.673945;
     const Norris = [42.05366, -87.67258];
+    const Tech = [42.05794943096345, -87.6759015669095];
+    const Arch = [42.051612919651355, -87.67695617319212];
+    const Rock = [42.05171243673681, -87.67589231737026];
 
     const [pins, setPins] = useState([]);
 
@@ -86,6 +89,67 @@ const Map = () => {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </Popup>
           </Marker>
+
+          <Marker position={Tech}>
+            <Popup className="max-width-64">
+              <h1 className="font-bold text-xl py-2">Event At Tech</h1>
+              <h2>Organization</h2>
+             
+                <span id="badge-dismiss-default" className="inline-flex  items-center px-2 py-1 me-2 text-sm text-white bg-purple-400 rounded-xl">
+                Event
+                <button type="button" className="inline-flex items-center p-1 ms-2 text-sm text-white bg-transparent rounded-xl hover:text-black" data-dismiss-target="#badge-dismiss-default" aria-label="Remove">
+                <svg className="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                </button>
+                </span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </Popup>
+          </Marker>
+
+          <Marker position={Arch}>
+            <Popup className="max-width-64">
+              <h1 className="font-bold text-xl py-2">Event At The Arch</h1>
+              <h2>Organization</h2>
+              <span id="badge-dismiss-default" className="inline-flex items-center px-2 py-1 me-2 text-sm text-white bg-blue-400 rounded-xl">
+                Free Food
+                <button type="button" className="inline-flex items-center p-1 ms-2 text-sm text-white bg-transparent rounded-xl hover:text-black " data-dismiss-target="#badge-dismiss-default" aria-label="Remove">
+                <svg className="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                </button>
+                </span>
+                <span id="badge-dismiss-default" className="inline-flex  items-center px-2 py-1 me-2 text-sm text-white bg-purple-400 rounded-xl">
+                Event
+                <button type="button" className="inline-flex items-center p-1 ms-2 text-sm text-white bg-transparent rounded-xl hover:text-black" data-dismiss-target="#badge-dismiss-default" aria-label="Remove">
+                <svg className="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                </button>
+                </span>
+
+                <span id="badge-dismiss-default" className="inline-flex  items-center px-2 py-1 my-1 me-2 text-sm text-white bg-tertiary rounded-xl">
+                Religious
+                <button type="button" className="inline-flex items-center p-1 ms-2 text-sm text-white bg-transparent rounded-xl hover:text-black" data-dismiss-target="#badge-dismiss-default" aria-label="Remove">
+                <svg className="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                </button>
+                </span>
+
+                <span id="badge-dismiss-default" className="inline-flex  items-center px-2 py-1 me-2 my-1 text-sm text-white bg-yellow-400 rounded-xl">
+                Performance
+                <button type="button" className="inline-flex items-center p-1 ms-2 text-sm text-white bg-transparent rounded-xl hover:text-black" data-dismiss-target="#badge-dismiss-default" aria-label="Remove">
+                <svg className="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                </button>
+                </span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </Popup>
+          </Marker>
+
+
           {mapPins()}
         </MapContainer>
     );

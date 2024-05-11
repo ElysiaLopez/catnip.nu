@@ -41,10 +41,11 @@ const LoginSignup = () => {
           <input type="password" placeholder="Password" />
         </div>
         {action === "Sign Up" ? <div></div> : <div className="forgot-password pl-0">Forgot Password? <span>Click Here!</span></div>}
+        
         <div className="submit-container">
+        <button className="submit-container google-btn" onClick={handleGoogle}>Sign in With Google</button>
           <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => { setAction("Sign Up") }}>Sign Up</div>
           <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => { setAction("Login") }}>Login</div>
-          <button className="submit-container" onClick={handleGoogle}>Sign in With Google</button>
         </div>
       </div>
     </div>
