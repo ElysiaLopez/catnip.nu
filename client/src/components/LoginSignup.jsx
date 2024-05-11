@@ -23,8 +23,8 @@ const LoginSignup = () => {
 
   return (
     <div className='container w-6/12 rounded-lg shadow-md'>
-      <div className="header">
-        <div className="text">{action}</div>
+        <div className="header">
+        <div className="text font-league">{action}</div>
         <div className="underline"></div>
       </div>
       <div className="inputs mt-6">
