@@ -80,7 +80,8 @@ try {
 
   return (
     <div>
-      <button className="bg-white rounded-lg py-3 px-6 font-bold text-xl shadow-sm hover:bg-purple-300 hover:text-white hover:shadow-lg" color="primary" onClick={toggle}>
+      <button className="bg-white rounded-lg py-3 px-6 font-bold text-xl shadow-sm hover:bg-secondary hover:-translate-y-1 hover:text-white hover:shadow-xl
+      transition ease-in-out duration-300 text-primary" color="primary" onClick={toggle}>
         Create Event
       </button>
       <Modal className="z-10 fixed w-128 m-auto top-4 left-128 bg-white rounded-xl shadow-md p-6" isOpen={modal} toggle={toggle} {...args}>
@@ -94,7 +95,7 @@ try {
                 <input type="text"
                     name="organization"
                     id="organization"
-                    className="p-1 w-64 border-purple-200 border-2 rounded-md"/>
+                    className="p-1 w-64 border-gray border-2 rounded-md"/>
             </InputGroup>
             <br />
             <InputGroup>
@@ -105,7 +106,7 @@ try {
                 type="text"
                 name="location"
                 id="location"
-                className="p-1 w-64 border-purple-200 border-2 rounded-md"/>
+                className="p-1 w-64 border-gray border-2 rounded-md"/>
             </InputGroup>
             <br />
             <InputGroup>
@@ -116,7 +117,7 @@ try {
                 type="text"
                 name="title"
                 id="title"
-                className="p-1 w-64 border-purple-200 border-2 rounded-md"/>
+                className="p-1 w-64 border-gray border-2 rounded-md"/>
             </InputGroup>
             <br />
             <InputGroup>
@@ -127,7 +128,7 @@ try {
                 type="text"
                 name="tags"
                 id="tags"
-                 className="p-1 w-64 border-purple-200 border-2 rounded-md"/>
+                 className="p-1 w-64 border-gray border-2 rounded-md"/>
             </InputGroup>
             <br />
             <InputGroup>
@@ -137,12 +138,12 @@ try {
                 <textarea 
                 name="description"
                 id="description"
-                className="p-1 h-24 w-96 border-purple-200 border-2 rounded-md"/>
+                className="p-1 h-24 w-96 border-gray border-2 rounded-md"/>
             </InputGroup>
             <br />
         </ModalBody>
         <ModalFooter>
-          <Button type="submit" className="p-2 px-4 rounded text-white font-bold bg-purple-300" onClick={toggle}>
+          <Button type="submit" className="p-2 px-4 rounded text-white font-bold bg-secondary  transition ease-in-out duration-200 hover:bg-white hover:text-primary hover:shadow-lg " onClick={toggle}>
             Publish
           </Button>{' '}
           <Button className="p-2 px-4" onClick={toggle}>

@@ -15,11 +15,11 @@ function Filter() {
         <Card
         body
         outline
-        className="bg-white rounded-xl shadow-md p-6"
+        className="bg-white rounded-xl shadow-md p-6 border-gray-200 border-4 "
         >
         <CardBody>
             <CardTitle tag="h5">
-            <h1 className="text-xl font-bold mb-6">Filter</h1>
+            <h1 className="text-xl font-bold mb-6 text-primary">Filter</h1>
             </CardTitle>
             <CardSubtitle
             className="mb-2 text-muted"
@@ -66,7 +66,7 @@ function Filter() {
             </InputGroup>
             <br />
             </div>
-            <Button className="bg-purple-300 p-2 px-4 rounded-lg font-bold text-white">Search</Button>
+            <Button className="bg-secondary transition ease-in-out duration-200 hover:bg-white hover:text-primary hover:shadow-lg p-2 px-4 rounded-lg font-bold text-white">Search</Button>
         </CardBody>
         </Card>
         </>

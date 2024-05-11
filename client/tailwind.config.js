@@ -14,10 +14,19 @@ export default {
         '175': '1.75',
         '200': '2',
         '300': '3',
-        '400': '4'
+        '400': '4',
+        '500': '5'
+      },
+      colors: {
+        'primary': '#006838',
+        'secondary': '#55833D',
+        'tertiary': '#8CC342'
       }
-    }
-  },
+    },
+    fontFamily: {
+      'league': ['League', 'sans-serif'],
+    },
   plugins: [],
+}
 }
 
