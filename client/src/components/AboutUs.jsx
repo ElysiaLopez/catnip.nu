@@ -1,4 +1,4 @@
-import logo from '../assets/catnip.png';
+import logo from '../assets/image0.png';
 
 const AboutUs = () => {
     return (
