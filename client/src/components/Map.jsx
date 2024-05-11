@@ -67,7 +67,22 @@ const Map = () => {
             <Popup className="max-width-64">
               <h1 className="font-bold text-xl py-2">Event At Norris</h1>
               <h2>Organization</h2>
-              <h3>Tags</h3>
+              <span id="badge-dismiss-default" className="inline-flex items-center px-2 py-1 me-2 text-sm text-white bg-blue-400 rounded-xl">
+                Free Food
+                <button type="button" className="inline-flex items-center p-1 ms-2 text-sm text-white bg-transparent rounded-xl hover:text-black " data-dismiss-target="#badge-dismiss-default" aria-label="Remove">
+                <svg className="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                </button>
+                </span>
+                <span id="badge-dismiss-default" className="inline-flex  items-center px-2 py-1 me-2 text-sm text-white bg-purple-400 rounded-xl">
+                Event
+                <button type="button" className="inline-flex items-center p-1 ms-2 text-sm text-white bg-transparent rounded-xl hover:text-black" data-dismiss-target="#badge-dismiss-default" aria-label="Remove">
+                <svg className="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                </button>
+                </span>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </Popup>
           </Marker>

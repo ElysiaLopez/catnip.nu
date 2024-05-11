@@ -90,6 +90,17 @@ try {
         <form onSubmit={onSubmit}>
         <ModalBody>
         <InputGroup>
+        <InputGroup>
+                <InputGroupText>
+                <h2 className="font-bold">Title of Event </h2>
+                </InputGroupText>
+                <input
+                type="text"
+                name="title"
+                id="title"
+                className="p-1 w-64 border-gray border-2 rounded-md"/>
+            </InputGroup>
+            <br />
                 <InputGroupText>
                 <h2 className="font-bold">Name of Organization </h2>
                 </InputGroupText>
@@ -103,33 +114,54 @@ try {
                 <InputGroupText>
                 <h2 className="font-bold">Location </h2>
                 </InputGroupText>
-                <input 
-                type="text"
-                name="location"
-                id="location"
-                className="p-1 w-64 border-gray border-2 rounded-md"/>
+                <select className="border-gray-100 border-2 rounded-md p-2 w-48 h-10">
+                    <option selected className="text-gray-300">Choose a Location</option>
+                    <option value="Norris">Norris</option>
+                    <option value="Rock">The Arch</option>
+                    <option value="Arch">The Rock</option>
+                    <option value="Tech">Tech</option>
+                </select>
             </InputGroup>
             <br />
-            <InputGroup>
-                <InputGroupText>
-                <h2 className="font-bold">Title of Event </h2>
-                </InputGroupText>
-                <input
-                type="text"
-                name="title"
-                id="title"
-                className="p-1 w-64 border-gray border-2 rounded-md"/>
-            </InputGroup>
-            <br />
+            
             <InputGroup>
                 <InputGroupText>
                 <h2 className="font-bold">Tags </h2>
                 </InputGroupText>
-                <input
-                type="text"
-                name="tags"
-                id="tags"
-                 className="p-1 w-64 border-gray border-2 rounded-md"/>
+                <span id="badge-dismiss-default" className="inline-flex items-center px-2 py-1 me-2 text-sm text-white bg-blue-400 rounded-xl">
+                Free Food
+                <button type="button" className="inline-flex items-center p-1 ms-2 text-sm text-white bg-transparent rounded-xl hover:text-black " data-dismiss-target="#badge-dismiss-default" aria-label="Remove">
+                <svg className="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                </button>
+                </span>
+                <span id="badge-dismiss-default" className="inline-flex  items-center px-2 py-1 me-2 text-sm text-white bg-purple-400 rounded-xl">
+                Event
+                <button type="button" className="inline-flex items-center p-1 ms-2 text-sm text-white bg-transparent rounded-xl hover:text-black" data-dismiss-target="#badge-dismiss-default" aria-label="Remove">
+                <svg className="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                </button>
+                </span>
+
+                <span id="badge-dismiss-default" className="inline-flex  items-center px-2 py-1 my-1 me-2 text-sm text-white bg-tertiary rounded-xl">
+                Religious
+                <button type="button" className="inline-flex items-center p-1 ms-2 text-sm text-white bg-transparent rounded-xl hover:text-black" data-dismiss-target="#badge-dismiss-default" aria-label="Remove">
+                <svg className="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                </button>
+                </span>
+
+                <span id="badge-dismiss-default" className="inline-flex  items-center px-2 py-1 me-2 my-1 text-sm text-white bg-yellow-400 rounded-xl">
+                Performance
+                <button type="button" className="inline-flex items-center p-1 ms-2 text-sm text-white bg-transparent rounded-xl hover:text-black" data-dismiss-target="#badge-dismiss-default" aria-label="Remove">
+                <svg className="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                </button>
+                </span>
             </InputGroup>
             <br />
             <InputGroup>
