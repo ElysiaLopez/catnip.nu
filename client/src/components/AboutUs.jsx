@@ -6,7 +6,7 @@ const AboutUs = () => {
       <h1 className="text-primary text-2xl font-bold p-4"><strong>Welcome to catnip, Your Interactive Guide to Campus Events!</strong></h1>
       <p>At <span className="text-primary font-bold">catnip.nu</span>, we're passionate about bringing Wildcats together through a vibrant, interactive map that makes discovering and participating in events and organizations around campus effortless and fun. Designed with both the Northwestern University community and Evanston residents in mind, our platform bridges the gap between student organizations, local businesses, and event-goers through a user-friendly app interface.</p>
   
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 my-8">
       
       <div className="py-8 px-6 rounded-lg border-2 my-4 border-tertiary">
       <h3 className="text-secondary text-xl font-bold p-2"><strong>Our Mission</strong></h3>

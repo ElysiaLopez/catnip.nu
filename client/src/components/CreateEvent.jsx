@@ -10,6 +10,7 @@ function CreateEvent(args) {
   const [form, setForm] = useState({
     organization: "",
     location: "",
+    position: "",
     title: "",
     tags: "",
     description: ""
